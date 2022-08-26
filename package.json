@@ -13,8 +13,7 @@
     "package.json"
   ],
   "scripts": {
-    "preinstall": "npm run co:login",
-    "co:login": "aws codeartifact login --tool npm --repository my-repo --domain my-domain  --region us-west-2 ",
+    "artifact:login": "aws codeartifact login --tool npm --repository my-repo --domain my-domain  --region us-west-2 ",
     "artifact:login:ci": "aws codearrtifact login --tool npm --repository my-repo --domain my-domian --region us-west-2",
     "test": "jest",
     "build": "webpack",
