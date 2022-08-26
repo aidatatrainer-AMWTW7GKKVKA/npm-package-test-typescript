@@ -9,7 +9,7 @@ phases:
       - npm --versions
       - npm -d ping
       - echo Installing NPM dependencies..; npm ci;
-      - echo Auditing NPM dependencies..; npm audit;
+      - echo Auditing NPM dependencies..; npm audit --only=prod;
       - echo Log in to Code Artifact..; npm run artifact:login:ci;
 
   build:
