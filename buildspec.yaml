@@ -7,6 +7,7 @@ phases:
   pre_build:
     commands:
       - npm --versions
+      - npm -d ping
       - echo Installing NPM dependencies..; npm ci;
       - echo Auditing NPM dependencies..; npm audit;
       - echo Log in to Code Artifact..; npm run artifact:login:ci;
